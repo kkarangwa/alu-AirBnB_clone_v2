@@ -11,3 +11,4 @@ ln -sf /data/web_static/releases/test /data/web_static/current
 chown --recursive ubuntu:ubuntu /data/
 sed -i 's|^\tlocation / {|\tlocation /hbnb_static/ {\n\t\talias /data/web_static/current/;\n\t}\n\n\tlocation / {|' /etc/nginx/sites-available/default
 service nginx restart
+~                                          
